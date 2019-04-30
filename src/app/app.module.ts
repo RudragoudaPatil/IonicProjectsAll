@@ -11,7 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { Firebase } from '@ionic-native/firebase/ngx'
+import { Firebase } from '@ionic-native/firebase/ngx';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
 
 const config = {
@@ -37,6 +38,7 @@ const config = {
     StatusBar,
     SplashScreen,
     Firebase,
+    BarcodeScanner,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
